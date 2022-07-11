@@ -1,0 +1,12 @@
+.advantages-element{
+			
+			padding: 50px 70px;
+		}
+
+		.advantages-element .image{
+			width: 100px;
+			height: 100px;
+            background-color: #eee8aa;
+		}
+
+		.advantages-element .text{}

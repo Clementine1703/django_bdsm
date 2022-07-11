@@ -1,0 +1,34 @@
+@font-face {
+  font-family: 'badscript'; /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+   src: url('serif/BadScript-Regular.ttf'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+
+*{
+    font-family: badscript;
+}
+
+
+
+		.rooms .room{
+			/* height: 330px; */
+			/* background-color: black; */
+			border: 20px solid white;
+		}
+
+		.advantages-element{
+			
+			padding: 50px 70px;
+		}
+
+
+
+		.advantages-element .text{}
+
+.index-top-section{
+	background:
+		linear-gradient(90deg, hsl(256,33,10) (22px - 1px), transparent 1%) center,
+		linear-gradient(hsl(256,33,10) (22px - 1px), transparent 1%) center,
+		hsl(256,33,70);;
+	background-size: 22px 22px;
+}
+
