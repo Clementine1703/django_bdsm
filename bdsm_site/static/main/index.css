@@ -3,32 +3,95 @@
    src: url('serif/BadScript-Regular.ttf'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
 }
 
+@font-face {
+  font-family: 'lionel'; /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+   src: url('lionel/Lionelofparis.ttf'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+
 *{
-    font-family: badscript;
+}
+
+body{
+    background-color:#eee8aa;
+}
+
+.index-top-section .main-text h1{
+    display: inline;
+    color: #eee8aa;
+	font-family: lionel;
+	font-size: 65px;
+    line-height: 1.25;
+    letter-spacing: 0em;
+    background-color: #212529;
+    box-shadow: -25px 0 0 #212529, 25px 0 0 #212529;
+    padding: 10px 0;
 }
 
 
+.index-top-section .main-text p{
+    font-family: badscript;
+    color: #eee8aa;
+}
 
-		.rooms .room{
-			/* height: 330px; */
-			/* background-color: black; */
-			border: 20px solid white;
-		}
+form {
+    padding: 20px;
+    background-color: #323940;
+    font-family: badscript;
+    color: #eee8aa;
+}
 
-		.advantages-element{
-			
-			padding: 50px 70px;
-		}
+form .form-control{
+    background-color: #212529;
+    color: white;
+    font-family: 'Arial';
+}
 
+form .form-control:focus, form .form-control:active{
+    background-color: #212529;
+    color: white;
+}
 
+form button{
+    color: #eee8aa;
+    display: inline-block;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  background-color: #212529;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
 
-		.advantages-element .text{}
+.rooms{
+    background-color: #eee8aa;
+}
+
+.rooms .room{
+	/* height: 330px; */
+	/* background-color: black; */
+	border: 20px solid white;
+}
+
+.advantages-element{
+	padding: 50px 70px;
+}
+
+.advantages-element .text{}
 
 .index-top-section{
-	background:
-		linear-gradient(90deg, hsl(256,33,10) (22px - 1px), transparent 1%) center,
-		linear-gradient(hsl(256,33,10) (22px - 1px), transparent 1%) center,
-		hsl(256,33,70);;
-	background-size: 22px 22px;
+	background-color: #323940;
+}
+
+.hidden {
+    visible: hidden;
 }
 

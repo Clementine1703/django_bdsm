@@ -7,7 +7,7 @@ class CallForm(forms.Form):
                            disabled=False,
                            error_messages={'required': "Пожалуйста, введите ваше имя"})
     number = forms.CharField(label='Введите номер', max_length=12, required=True,
-                             widget=forms.TextInput(attrs={'class': 'form-control mb-5', 'id': 'inputAddress2', 'name':'number',}),
+                             widget=forms.TextInput(attrs={'class': 'form-control mb-4', 'id': 'inputAddress2', 'name':'number',}),
                              disabled=False,
                              error_messages={'required': "Пожалуйста, введите ваш номер"})
     checkbox = forms.BooleanField(label='',
