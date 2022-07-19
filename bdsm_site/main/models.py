@@ -107,7 +107,7 @@ class RoomsAccessories(models.Model):
 class Request(models.Model):
     name = models.CharField(max_length=100, verbose_name='имя')
     number = models.CharField(max_length=100, verbose_name='номер телефона')
-    date = models.DateTimeField(auto_now_add=True, verbose_name='дата')
+    date = models.DateTimeField(auto_now_add=False, verbose_name='дата')
 
     def __str__(self):
         return self.name

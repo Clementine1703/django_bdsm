@@ -53,11 +53,7 @@ class SiteAdmin(admin.ModelAdmin):
 
 @admin.register(Request)
 class RequestAdmin(admin.ModelAdmin):
-    readonly_fields = ('name', 'number', 'beautiful_date')
-
-    @admin.display(description='дата и время поступления')
-    def beautiful_date(self, obj):
-        return datetime.strftime(obj.date, "%d.%m.%Yг.\n%Hч %Mм %Sс")
+    readonly_fields = ('name', 'number', 'date')
 
 
     def has_add_permission(self, request, obj=None):

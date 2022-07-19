@@ -8,6 +8,7 @@ list-style: none;
 font: 23px "Trebuchet MS", "Lucida Sans";
 padding: 0;
 text-shadow: 0 1px 0 rgba(255,255,255,.5);
+margin-bottom: 40px;
 }
 .rules-list li {
 position: relative;
