@@ -1,5 +1,7 @@
 body{
-    background-color:white;
+    background-color:#323940;
+	 font-weight: 650;
+	 font-family: 'Montserrat', sans-serif;
 }
 
 .rules-list {
@@ -13,16 +15,17 @@ margin-bottom: 40px;
 .rules-list li {
 position: relative;
 display: block;
-padding: .4em .4em .4em 2em;
+padding: .8em .8em .8em 2em;
 margin: .5em 0;
-background: #DAD2CA;
-color: #444;
+background: #212529;
+color: white;
 text-decoration: none;
 border-radius: .3em;
 transition: .3s ease-out;
 cursor: pointer;
+text-align: left;
 }
-.rules-list li:hover {background: #E9E4E0;}
+.rules-list li:hover {background: #212529;}
 .rules-list li:hover:before {transform: rotate(360deg);}
 .rules-list li:before {
 content: counter(li);
@@ -31,11 +34,11 @@ position: absolute;
 left: -1.3em;
 top: 50%;
 margin-top: -1.3em;
-background: #8FD4C1;
+background: #f55326;
 height: 2.5em;
 width: 2.5em;
-line-height: 2em;
-border: .3em solid white;
+line-height: 1.9em;
+border: .3em solid #212529;
 text-align: center;
 font-weight: bold;
 border-radius: 2em;

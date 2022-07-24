@@ -1,14 +1,21 @@
+:root{
+	--main-bg-color-2: #F04619;
+}
+
+
 .advantages{
-    background-color: #eee8aa;
+    background-color: #323940;
+	 font-family: 'Montserrat', sans-serif;
+	font-weight: 650;
 }
 
 .advantages-element{
-	padding: 50px 70px;
+	padding: 35px 70px;
 }
 
 .advantages-element .image{
-	width: 100px;
-	height: 100px;
+	width: 125px;
+	height: 125px;
     background-color: black;
 }
 

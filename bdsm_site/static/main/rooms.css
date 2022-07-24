@@ -1,8 +1,8 @@
 body{
-    background-color:#eee8aa;
+	background-color: #323940;
 }
 
-.description{
+.description .room-desc-button{
 }
 
 button.button7 {
@@ -11,16 +11,16 @@ button.button7 {
   text-decoration: none;
   padding: .8em 1em calc(.8em + 3px);
   border-radius: 3px;
-  background: rgb(64,199,129);
-  box-shadow: 0 -3px rgb(53,167,110) inset;
+  background: #F04619;
+  box-shadow: 0 -3px #f55326 inset;
   transition: 0.2s;
   position: relative;
   overflow: hidden;
 } 
-button.button7:hover { background: rgb(53, 167, 110); }
+button.button7:hover { background: #e73d0e; }
 button.button7:active {
-  background: rgb(33,147,90);
-  box-shadow: 0 3px rgb(33,147,90) inset;
+  background: #e73d0e;
+  box-shadow: 0 3px #e73d0e inset;
 }
 
 .dbl-border {
@@ -55,25 +55,52 @@ left: -12px;
 .dbl-border span:hover {background: #D4D8D9;}
 
 
-form {
+.modal-form {
 	padding: 20px;
 	background-color: #323940;
 	font-family: badscript;
-	color: #eee8aa;
+	color: white;
 }
 
-form .form-control{
+.modal-form .form-control{
 	background-color: #212529;
 	color: white;
 	font-family: 'Arial';
 }
 
-form .form-control:focus, form .form-control:active{
+.modal-form .form-control:focus, form .form-control:active{
 	background-color: #212529;
 	color: white;
 }
 
-form .btn .c-btn{
+.act button{
+	color: white;
+	background-color: #F04619;
+	display: inline-block;
+ font-weight: 700;
+ line-height: 2.5;
+ text-align: center;
+ text-decoration: none;
+ vertical-align: middle;
+ cursor: pointer;
+ -webkit-user-select: none;
+ -moz-user-select: none;
+ user-select: none;
+ border: 1px solid transparent;
+ padding: 0.6rem 0.8rem;
+ font-size: 1rem;
+ border-radius: 0.38rem;
+ transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+ position: relative;
+ overflow: hidden;
+}
+
+
+.modal-content, .modal-body{
+	background-color: #323940;
+}
+
+.modal-form .btn .c-btn{
 	color: #eee8aa !important;
 	display: inline-block !important;
  font-weight: 400 !important;
@@ -93,9 +120,7 @@ form .btn .c-btn{
  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out !important;
 }
 
-.modal-content, .modal-body{
-	background-color: #323940;
-}
+
 
 button.button7:after {
 	content: "";

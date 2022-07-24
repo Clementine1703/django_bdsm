@@ -11,6 +11,7 @@ urlpatterns = [
     path('rooms', views.rooms,  name='rooms'),
     path('rules', views.rules,  name='rules'),
     path('contacts', views.contacts,  name='contacts'),
+    path('stocks', views.stocks, name='stocks'),
 ]
 
 if settings.DEBUG:

@@ -1,5 +1,7 @@
+from multiprocessing import context
 from unicodedata import name
 from django.shortcuts import render, HttpResponse, HttpResponseRedirect
+from requests import request
 from .models import *
 
 from django.conf import settings
@@ -101,3 +103,11 @@ def contacts(request):
     contacts_data = SiteContacts.objects.all()
     context = {'contacts': contacts_data}
     return render(request, 'main/contacts.html', context=context)
+
+
+def stocks(request):
+    form = CallForm()
+    context = {
+        'form': form,
+    }
+    return render(request, 'main/stocks.html', context=context)

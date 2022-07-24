@@ -1,0 +1,9 @@
+body {
+	background-color: #323940;
+	color: white;
+	font-family: badscript;
+}
+
+a, a:visited, a:active, a:hover{
+	color: #f55326;
+}
