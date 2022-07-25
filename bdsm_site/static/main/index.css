@@ -17,12 +17,16 @@ body{
 	 font-family: 'Montserrat', sans-serif;
 }
 
+.index-top-section{
+	background-color: #323940;
+}
+
 
 
 .index-top-section .main-text h1{
     display: inline;
     color: white;
-	font-size: 60px;
+	 font-size: 55px;
     line-height: 1.6;
     letter-spacing: 0em;
     background-color: #212529;
@@ -31,10 +35,42 @@ body{
 	 letter-spacing: 0.1em;
 }
 
+@media (max-width: 1200px) {
+	
+	.index-top-section .main-text h1{
+		font-size: 50px;
+		line-height: 1.45;
+		
+  }
+ }
+
 @media (max-width: 650px) {
 	
 	.index-top-section .main-text h1{
 		font-size: 45px;
+		line-height: 1.4;
+		text-align: center;
+		
+		
+  }
+ }
+
+ @media (max-width: 500px) {
+	
+	.index-top-section .main-text h1{
+		font-size: 35px;
+		padding: 7px 0;
+		line-height: 1.3;
+		
+		
+  }
+ }
+
+ @media (max-width: 380px) {
+	
+	.index-top-section .main-text h1{
+		font-size: 25px;
+		
 		
   }
  }
@@ -104,9 +140,7 @@ body{
 
 .advantages-element .text{}
 
-.index-top-section{
-	background-color: #323940;
-}
+
 
 .hidden {
     visible: hidden;

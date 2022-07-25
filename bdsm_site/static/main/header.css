@@ -74,3 +74,9 @@ header .navbar-brand{
 	color: #F04619;
 }
 
+.border-orange{
+	border-left:#F04619 8px solid;
+	border-right:#F04619 8px solid;
+	background-color: #212529;
+}
+

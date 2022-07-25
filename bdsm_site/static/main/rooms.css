@@ -2,8 +2,38 @@ body{
 	background-color: #323940;
 }
 
-.description .room-desc-button{
+.description .room-desc-button button{
+	font-weight: 1000;
 }
+
+
+@media (max-width: 420px){
+	.description .room-desc-button button{
+	font-size: 13px;
+}
+	.dbl-border span {
+
+	margin-left: 10%;
+	}
+}
+
+@media (max-width: 370px){
+	.description .room-desc-button button{
+	font-size: 11px;
+}
+	button.button7{
+		font-size: 12px;
+		transform: scale(0.85);
+	}
+}
+
+@media (max-width: 327px){
+	.description .room-desc-button button{
+	font-size: 10px;
+	padding: 3px 5px;
+}
+}
+
 
 button.button7 {
   font-weight: 700;
@@ -32,27 +62,27 @@ margin: 5px 0;
 position: relative;
 }
 .dbl-border span {
-width: 100%;
-color: #808285;
+width: 90%;
+color: white;
 text-decoration: none;
 display: block;
-padding-left: 14px;
-height: 20px;
-line-height: 19px;
-font-size: 14px;
+margin-left: 10%;
+line-height: 15px;
+font-size: calc(10px + (20 - 10) * ((100vw - 260px) / (1920 - 260)));;
 position: relative;
 transition: 0.3s linear;
+padding: 5px;
 }
 .dbl-border span:before {
 content: "";
-width: 6px;
-height: 40%;
-background: #323940;
+width: 8px;
+height: 8px;
+background: #F04619;
 position: absolute;
 top: 30%;
-left: -12px;
+left: -25px;
 }
-.dbl-border span:hover {background: #D4D8D9;}
+.dbl-border span:hover {background: #212529;}
 
 
 .modal-form {
