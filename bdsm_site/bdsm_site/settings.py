@@ -130,6 +130,17 @@ STATICFILES_DIRS = [
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
+
+TIME_INPUT_FORMATS = [
+    '%I:%M:%S %p',  # 6:22:44 PM
+    '%I:%M %p',  # 6:22 PM
+    '%I %p',  # 6 PM
+    '%H:%M:%S',     # '14:30:59'
+    '%H:%M:%S.%f',  # '14:30:59.000200'
+    '%H:%M',        # '14:30'
+]
+
+
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
@@ -138,4 +149,3 @@ EMAIL_PORT = 587
 EMAIL_HOST_USER = 'superbotsite1@gmail.com'
 EMAIL_HOST_PASSWORD = 'gfno tgng latg jnvc'
 EMAIL_USE_TLS = True
-

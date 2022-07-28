@@ -48,7 +48,7 @@ transition: all .3s ease-out;
 @media (max-width: 500px) {
 	
 	.rules-list {
-		font-size: calc(12px + (20 - 12) * ((100vw - 260px) / (1920 - 260)));;
+		font-size: calc(12px + (20 - 12) * ((100vw - 260px) / (1920 - 260)));
 	}
 
  }

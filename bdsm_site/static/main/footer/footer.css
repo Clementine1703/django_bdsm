@@ -1,5 +1,5 @@
 footer {
-  font-family: "Poppins", Arial, sans-serif ; !important
+  font-family: "Poppins", Arial, sans-serif !important ; 
   font-size: 15px;
   line-height: 1.8;
   font-weight: normal; }
@@ -32,8 +32,8 @@ footer .ftco-footer-social li {
   margin: 20px 30px 0 0;
   display: inline-block; }
   footer .ftco-footer-social li a {
-    height: 40px;
-    width: 40px;
+    height: 20px;
+    width: 20px;
     display: block;
     background: rgba(0, 0, 0, 0.05);
     border-radius: 50%;
@@ -94,6 +94,12 @@ footer {
       margin: 0 10px;
       text-transform: uppercase;
       letter-spacing: 1px; }
-  .footer-07 .ftco-footer-social li a {
-    background: transparent;
-    margin: 0 35px; }
+		.footer-07 .ftco-footer-social{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin: 0 -5px;
+		}
+		.footer-07 .ftco-footer-social > div{
+			margin: 0 15px;
+		}

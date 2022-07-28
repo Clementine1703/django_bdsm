@@ -69,11 +69,6 @@ def rooms(request):
         result_list.append({'this_room': all_rooms[i], 'url_list': urls, 'id': i,
                            'costs': cost, 'devices': devices, 'accessories': accessories})
 
-        context = {
-            'rooms': result_list,
-            'form': form,
-        }
-
         data = CallForm(request.POST or None)
         if data.is_valid():
             try:
@@ -89,6 +84,11 @@ def rooms(request):
                 return render(request, 'main/mail_success.html', context={'success': False})
                 # send_mail('Новая заявка!', f'Имя: {form_name}<br>Номер телефона: {form_number}', settings.EMAIL_HOST_USER,
                 #           [settings.EMAIL_HOST_USER], fail_silently=True)
+
+    context = {
+        'rooms': result_list,
+        'form': form,
+    }
 
     return render(request, 'main/rooms.html', context=context)
 
