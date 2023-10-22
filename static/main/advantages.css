@@ -1,0 +1,38 @@
+
+
+
+.advantages{
+    background-color: #323940;
+	 font-family: 'Montserrat', sans-serif;
+	font-weight: 650;
+}
+
+.advantages-element{
+	padding: 15px 50px;
+}
+
+.advantages-element .image{
+	width: 125px;
+	height: 125px;
+    background-color: black;
+}
+
+.advantages-element .image img{
+	width: 125px;
+}
+
+.advantages-element .text{}
+
+.fff{
+background-color: #eee8aa;}
+
+@media (max-width: 1000px) {
+	.advantages-element .image{
+		width: 100px;
+		height: 100px;
+	}
+
+	.advantages-element .image img{
+		max-width: 100px;
+	}
+}

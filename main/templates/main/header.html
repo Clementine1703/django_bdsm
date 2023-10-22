@@ -1,0 +1,52 @@
+
+<header>
+    
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   var z = null;m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(90034984, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/90034984" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+    
+	<nav class="navbar navbar-expand-lg ">
+		<div class="container">
+		  <a class="navbar-brand my-2" href="{% url 'index' %}"> <span style="color: white;">X </span>ROOMS <span style="color: white;">72</span></a>
+		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+			 <span class="navbar-toggler-icon burger"><div></div></span>
+		  </button>
+		  <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+			 <ul class="navbar-nav">
+				<li class="nav-item mx-auto">
+				  <a class="nav-link active" aria-current="page" href="{% url 'index' %}">Главная</a>
+				</li>
+				<li class="nav-item mx-auto px-3">
+				  <a class="nav-link" href="{% url 'rooms' %}">Апартаменты</a>
+				</li>
+				<li class="nav-item mx-auto px-3">
+				  <a class="nav-link" href="https://andrey72.ru/" target="_blank">Игрушки</a>
+				</li>
+				<li class="nav-item mx-auto px-3">
+					<a class="nav-link" href="{% url 'stocks' %}">Акции</a>
+				 </li>
+				 <li class="nav-item mx-auto px-3" >
+					<a class="nav-link" href="{% url 'rules' %}">Правила</a>
+				 </li>
+				 <li class="nav-item mx-auto px-3">
+					<a class="nav-link" href="{% url 'contacts' %}">Контакты</a>
+				 </li>
+			 </ul>
+		  </div>
+		</div>
+	 </nav>
+	</header>

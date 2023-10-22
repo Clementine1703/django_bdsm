@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="73b5bbad-1b3b-421d-84b9-284765323f3e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/templates/19.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/20.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/DSC04332.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/advantages.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/contacts.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/header.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/header.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/rooms.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/rooms.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/rules.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/serif/BadScript-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/serif/COPYRIGHT.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/serif/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/serif/README.txt" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/templates" />
+  </component>
+  <component name="ProjectId" id="2BiartLcoc0Z6xeoGT99st8tA5x" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="73b5bbad-1b3b-421d-84b9-284765323f3e" name="Default Changelist" comment="" />
+      <created>1657391561608</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1657391561608</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="465" y="237" key="com.intellij.ide.util.TipDialog" timestamp="1657391642022">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="465" y="237" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1657391642022" />
+  </component>
+</project>

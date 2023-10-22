@@ -1,0 +1,75 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	 <!-- Bootstrap CSS -->
+    <link href="{% static 'main/bootstrap.css' %}" rel="stylesheet">
+	 <link rel="stylesheet" href="{% static 'main/header.css' %}">
+	 <link rel="stylesheet" href="{% static 'main/contacts.css' %}">
+	  <link rel="stylesheet" href="{% static 'main/footer/footer.css' %}">
+	  <link href="https://fonts.googleapis.com/css?family=Montserrat:100" rel="stylesheet">
+	  <link rel="icon" href="{% static 'main/images/main_image.png' %}">
+
+    <title>Контакты</title>
+
+	 <style>
+		.map iframe{
+			width: 100%;
+		}
+	 </style>
+  </head>
+  <body>
+	
+	{% include "main/header.html" %}
+
+	 <div class="contacts-container">
+		<div class="container">
+			<div class="row">
+				<div class="col d-flex flex-column justify-content-center align-items-center mt-5 py-2 border-orange shadow" >
+					<h1 class="section-headname text-center">Контакты</h1>
+					<p class="section-headname text-center">Где мы и как с нами связаться</p>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid">
+			<div class="row data my-5">
+				<div class="col-12 col-lg-4 number d-flex justify-content-center align-items-center flex-column">
+					<p class=" contact-headname">Номер:</p>
+					<p class=" contact-content text-center">{{ contacts.0.number }}</p>
+				</div>
+				<div class="col-12 col-lg-4 adres d-flex justify-content-center align-items-center flex-column">
+					<p class=" contact-headname">Адрес:</p>
+					<p class=" contact-content text-center">{{ contacts.0.address }}</p>
+				</div>
+				<div class="col-12 col-lg-4 email d-flex justify-content-center align-items-center flex-column ">
+					<p class=" contact-headname">Почта:</p>
+					<p class=" contact-content text-center">{{ contacts.0.email }}</p>
+				</div>
+			</div>
+			<div class="row map">
+				<div class="col">
+				    <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/55/tyumen/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Тюмень</a><a href="https://yandex.ru/maps/55/tyumen/house/ulitsa_pervootkryvateley_14/YkwYcgBjTUMAQFttfX1ycH1qYA==/?ll=65.473467%2C57.131195&utm_medium=mapframe&utm_source=maps&z=17.1" style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица Первооткрывателей, 14 — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CCUR4AFJCC" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+					<!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2303.6472954335477!2d37.202677015860665!3d54.733418580293076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41351d0c11329831%3A0xe9c8acee40817ca5!2z0KLRg9C70YzRgdC60LDRjyDQvtCx0LsuLCAzMDEwMTE!5e0!3m2!1sru!2sru!4v1657274369755!5m2!1sru!2sru" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>-->
+				</div>
+			</div>
+		</div>
+	 </div>
+
+	{% include 'main/footer.html' %}
+
+				
+
+	
+    
+	<script
+	src="https://code.jquery.com/jquery-3.6.0.min.js"
+	integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+	crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  	<script src="{% static 'main/burger.js' %}"></script>
+  </body>
+</html>

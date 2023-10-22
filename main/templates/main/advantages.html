@@ -1,0 +1,30 @@
+{% load static %}
+<div class="advantages mb-3">
+	<div class="container">
+		<div class="row mb-2">
+			<div class="col d-flex justify-content-center align-items-center shadow mt-2 py-2 border-orange">
+				<h1 class="section-headname text-center">Наши преимущества</h1>
+			</div>
+		</div>
+		<div class="row d-flex flex-wrap justify-content-center py-5">
+				<div class="advantages-element col-12 col-md-4 d-flex flex-column justify-content-center align-items-center hidden" data-mdb-animation-start="onScroll">
+					<div class="image rounded-circle">
+						<img src="{% static 'main/images/mask.png' %}" alt="">
+					</div>
+					<p class="text my-3 text-center">Анонимность</p>
+				</div>
+				<div class="advantages-element col-12 col-md-4 d-flex flex-column justify-content-center align-items-center hidden">
+					<div class="image rounded-circle">
+						<img src="{% static 'main/images/technical-support.png' %}" alt="">
+					</div>
+					<p class="text my-3 text-center">Оснащение номера</p>
+				</div>
+				<div class="advantages-element col-12 col-md-4 d-flex flex-column justify-content-center align-items-center hidden">
+					<div class="image rounded-circle">
+						<img src="{% static 'main/images/mop.png' %}" alt="">
+					</div>
+					<p class="text my-3 text-center">Уборка</p>
+				</div>
+		</div>
+	</div>
+</div>

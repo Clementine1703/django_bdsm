@@ -1,0 +1,32 @@
+{% load static %}
+<footer class="footer-07">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-md-12 text-center">
+						<h2 class="footer-heading"><a href="{% url 'index' %}" class="logo montseratt" ><span style="color: var(--main-color);">X</span> ROOMS <span style="color: var(--main-color);">72</span></a></h2>
+						<p class="menu">
+							<a href="{% url 'index' %}">Главная</a>
+							<a href="{% url 'rooms' %}">Комнаты</a>
+							<a href="https://andrey72.ru/">Игрушки</a>
+							<a href="{% url 'stocks' %}">Акции</a>
+							<a href="{% url 'rules' %}">Правила</a>
+							<a href="{% url 'contacts' %}">Контакты</a>
+						</p>
+						<div class="ftco-footer-social">
+							<div><img
+								src="{% static 'main/images/bondage.png' %}" alt="" width="50px"></div>
+							<div><img
+								src="{% static 'main/images/sex.png' %}" alt="" width="50px"></div>
+							<div><img
+								src="{% static 'main/images/handcuffs.png' %}" alt="" width="50px"></div>
+						</div>
+					</div>
+				</div>
+				<div class="row mt-5">
+					<div class="col-md-12 text-center">
+						<p class="copyright">
+					  Copyright &copy;<script>document.write(new Date().getFullYear());</script> -  Все права защищены</p>
+					</div>
+				</div>
+			</div>
+		</footer>

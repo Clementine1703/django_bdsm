@@ -1,0 +1,102 @@
+@font-face {
+  font-family: 'philosopher'; /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+   src: url('philosopher/Philosopher-Regular.ttf'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+
+@font-face {
+  font-family: 'badscript'; /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+   src: url('serif/BadScript-Regular.ttf'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+
+@font-face {
+  font-family: 'nautilus'; /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+   src: url('serif/Nautilus.otf'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+
+@font-face {
+  font-family: 'exotc'; /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+   src: url('serif/exotc350bdbtrusbyme_bold.otf'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+
+
+:root{
+	--main-color: #C63D4F;
+	--main-color-aa: #C63D4F55;
+	--font-1: 'nautilus', sans-serif;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.section-headname{
+	font-family: var(--font-1);
+	font-weight: 650;
+}
+
+.section-description{
+	font-family: var(--font-1);
+	font-weight: 650;
+}
+
+.montseratt{
+	font-family: var(--font-1);
+	font-weight: 650;
+}
+
+.container{
+	width: 80%;
+}
+
+header nav{
+background-color: #212529;
+color: white;
+font-family: var(--font-1);
+font-weight: 650;
+}
+
+header nav container{
+border-bottom: 2px solid white;
+}
+
+
+
+header nav a, header nav .nav-link, header nav .nav-link:visited{
+color: white;
+}
+
+
+.navbar-toggler .burger:before,
+.navbar-toggler .burger:after,
+.navbar-toggler .burger div {
+  background: white;
+  content: "";
+  display: block;
+  height: 4px;
+  border-radius: 3px;
+  margin: 4px 0;
+  transition: 0.5s;
+}
+.navbar-toggler .burger.active:before {
+  transform: translateY(8px) rotate(135deg);
+}
+.navbar-toggler .burger.active:after {
+  transform: translateY(-8px) rotate(-135deg);
+}
+.navbar-toggler .burger.active div {
+  transform: scale(0);
+}
+
+header .navbar-brand{
+	color: var(--main-color);
+	font-size: calc(20px + (37 - 20) * ((100vw - 260px) / (1920 - 260)));;
+}
+
+.border-orange{
+	border-left:var(--main-color) 8px solid;
+	border-right:var(--main-color) 8px solid;
+	background-color: #212529;
+}
+

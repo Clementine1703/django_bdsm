@@ -1,0 +1,167 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="yandex-verification" content="206d4036afd031a1" />
+    <meta name="description" content='Номера для свиданий Rooms72 на "Первооткрывателей 14" - это современные апартаменты с приятным дизайном, где вы сможете воплотить свои фантазии в жизнь. Игрушки и девайсы уже входят в стоимость аренды номера. Звоните!' />
+    <meta name="google-site-verification" content="pcudwfilaZS76orrey9p7MtMHi4EZed0dgOgxEj6-kc" />
+    
+    <!-- Bootstrap CSS -->
+    <link href="{% static 'main/bootstrap.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'main/preloader.css' %}">
+	 <link rel="stylesheet" href="{% static 'main/header.css' %}">
+	 <link rel="stylesheet" href="{% static 'main/index.css' %}">
+	 <link rel="stylesheet" href="{% static 'main/act.css' %}">
+	 <link rel="stylesheet" href="{% static 'main/advantages.css' %}">
+	  <link rel="stylesheet" href="{% static 'main/footer/footer.css' %}">
+	  <link href="https://fonts.googleapis.com/css?family=Montserrat:100" rel="stylesheet">
+	  <link rel="icon" href="{% static 'main/images/main_image.png' %}">
+	  
+
+    <title>Rooms72 на Первооткрывателей 14 - Номера на час</title>
+  </head>
+  <body>
+  {% include 'main/preloader.html' %}
+  {% if form_submit_success %}
+  успешно
+  {% endif %}
+	
+	{% include "main/header.html" %}
+
+  	 <div class="index-top-section py-3">
+	 <div class="container">
+		<div class="row py-2">
+			<div class="col-12 col-lg-7 g-5"> 
+				<div class="row">
+					<div class="col main-text">
+						<h1 class="mt-2 mb-4 section-description text-lg-center"><span>Апар&shyтаменты с индивиду&shyальным дизайном</span></h1>
+						<p class="my-4 h3">100% анонимность и конфиденциальность</p>
+					</div>
+				</div>
+			</div>
+
+			<form class="col-12 col-lg-4 offset-lg-1 mt-1 main-form" action="" method="POST">
+				 {% csrf_token %}
+				<div class="col-12">
+					{{ form.name.errors }}
+				  <label for="{{ form.name.id_for_label }}" class="form-label">Имя</label>
+					{{ form.name }}
+<!--				  <input type="text" class="form-control mb-3" id="inputAddress" placeholder="">-->
+				</div>
+				<div class="col-12">
+					{{ form.number.errors }}
+				  <label for="{{ form.number.id_for_label }}" class="form-label">Номер телефона</label>
+					{{ form.number }}
+<!--				  <input type="text" class="form-control mb-5" id="inputAddress2" placeholder="">-->
+				</div>
+				<div class="col-12">
+				  <button type="submit" class="w-50" style='background-color: var(--main-color)'>Позвоните мне!</button>
+				</div>
+				<div class="col-12">
+				  <div class="form-check my-3">
+<!--					 <input class="form-check-input" type="checkbox" id="gridCheck">-->
+					  {{ form.checkbox.errors }}
+					  {{ form.checkbox }}
+					  {{ form.is_bot }}
+					 <label class="form-check-label" for="{{ form.checkbox.id_for_label }}">
+						Мы не сохраняем ваши личные данные
+					 </label>
+					  {{ form.non_field_errors }}
+				  </div>
+				</div>
+			 </form>
+
+	 	</div>
+	</div>
+	</div>
+
+	<div class="rooms mt-5">
+		<div class="container-sm">
+				<div class="row">
+					<div class="col d-flex flex-column justify-content-center align-items-center py-2 border-orange shadow">
+					<h1 class="section-headname">Наши апартаменты</h1>
+					<!-- <p class="section-description">описание</p> -->
+					</div>
+				</div>
+				<div class="row d-flex flex-wrap justify-content-center">
+
+
+					{% for room in rooms %}
+
+					<div id="room-{{ room.id }}" class="carousel slide room col-12 col-xl-6 mt-3" data-bs-interval="false" data-bs-ride="carousel">
+						<a href="{% url 'rooms' %}" class="w-100">
+							<img class="w-100" src="{{ room.url_list.0.path }}">
+						</a>
+					</div>
+
+					{% endfor %}
+
+
+
+				</div>
+		</div>
+	</div>
+
+	
+		{% include 'main/act.html' %}
+		{% include 'main/advantages.html' %}
+  		{% include 'main/footer.html' %}
+
+	<script src="{% static 'main/carousel_activator.js' %}"></script>
+	<script
+	src="https://code.jquery.com/jquery-3.6.0.min.js"
+	integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+	crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  	<script src="{% static 'main/burger.js' %}"></script>
+	  <script>$(document).ready(function() {
+		$('.callFormButtonOpen').on('click', ()=>{
+			$('#callForm').modal('show');
+		})
+		$('.callFormButtonClose').on('click', ()=>{
+			$('#callForm').modal('hide');
+		})
+
+	});
+</script>
+<script>
+	$(document).ready(function() {
+		$('form').on('submit', ()=>{
+			$('.preloader-container').removeClass('hidden');
+		})
+
+	});
+</script>
+  </body>
+</html>
+
+
+<!--<div class="carousel-indicators">-->
+<!--								{% for url in room.url_list %}-->
+<!--									<button type="button" data-bs-target="#room-{{ room.id }}" data-bs-slide-to="{{ url.id }}" aria-label="Slide {{ url.slide_number }}"></button>-->
+<!--								{% endfor %}-->
+<!--						</div>-->
+<!--						<div class="carousel-inner">-->
+
+<!--							{% for url in room.url_list %}-->
+<!--							<div class="carousel-item">-->
+<!--							  <img src="{{ url.path }}" class="d-block w-100" alt="...">-->
+<!--							  <div class="carousel-caption d-none d-md-block">-->
+<!--								 <h5>Комната 2</h5>-->
+<!--								 <p>фото 1</p>-->
+<!--							  </div>-->
+<!--							</div>-->
+<!--							{% endfor %}-->
+
+<!--						 </div>-->
+<!--						<button class="carousel-control-prev carousel-control" type="button" data-bs-target="#room-{{ room.id }}"  data-bs-slide="prev">-->
+<!--						  <span class="carousel-control-prev-icon" aria-hidden="true"></span>-->
+<!--						  <span class="visually-hidden">Предыдущий</span>-->
+<!--						</button>-->
+<!--						<button class="carousel-control-next carousel-control" type="button" data-bs-target="#room-{{ room.id }}"  data-bs-slide="next">-->
+<!--						  <span class="carousel-control-next-icon" aria-hidden="true"></span>-->
+<!--						  <span class="visually-hidden">Следующий</span>-->
+<!--						</button>-->

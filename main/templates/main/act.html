@@ -1,0 +1,93 @@
+<div class="act">
+	<div class="container-sm">
+		<div class="row">
+			<div class="col-12 col-lg-6 offset-lg-0 act-card" style="position: relative;">
+					<svg version="1.1"  preserveAspectRatio="none" viewBox="200 0 80 80" style="padding: 0px; position: absolute; z-index: -1;"><defs><linearGradient id="gradient-ukoyomxm8hzcx9x454cl" x1="0%" y1="0%" x2="0%" y2="100%"><stop stop-color="rgba(220, 73, 24, 0.44)" offset="0%"></stop><stop stop-color="rgba(47, 47, 82, 0.44)" offset="100%"></stop></linearGradient></defs><path d="M240 80C262.091 80 280 62.0914 280 40C280 17.9086 262.091 0 240 0C217.909 0 200 17.9086 200 40C200 62.0914 217.909 80 240 80ZM240 65C253.807 65 265 53.8071 265 40C265 26.1929 253.807 15 240 15C226.193 15 215 26.1929 215 40C215 53.8071 226.193 65 240 65Z" fill-rule="evenodd"></path></svg>
+				<div class="card-act">
+					<div class="row">
+						<div class="col headname h-20 text-center mt-2 mt-lg-3 mt-sm-3  section-headname">Подарочный <span style="color: var(--main-color); font-weight: bold;">сертификат</span></div>
+					</div>
+					<div class="row">
+						<div class="col description h-40 text-center mt-3 mt-lg-3 mt-sm-4 mx-4">Настоящий сертификат дает право на одно бесплатное посещение апартаментов <br> <span class="montseratt" style="color: var(--main-color); font-weight: 1200;">( 3 часа )</span></div>
+					</div>
+					<div class="row">
+						<div class="col w-100 h-40 text-center flex align-items-center justify-content-center">
+							<button type="button" class="callFormButtonOpen w-50 section-headname card-button my-4  my-md-5" data-toggle="modal" data-target="#callForm">4500 руб</button>
+						 </div>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-lg-6 offset-lg-0 act-card my-2" style="position: relative;">
+					<svg version="1.1"  preserveAspectRatio="none" viewBox="200 0 80 80" style="padding: 0px; position: absolute; z-index: -1;"><defs><linearGradient id="gradient-ukoyomxm8hzcx9x454cl" x1="0%" y1="0%" x2="0%" y2="100%"><stop stop-color="rgba(220, 73, 24, 0.44)" offset="0%"></stop><stop stop-color="rgba(47, 47, 82, 0.44)" offset="100%"></stop></linearGradient></defs><path d="M240 80C262.091 80 280 62.0914 280 40C280 17.9086 262.091 0 240 0C217.909 0 200 17.9086 200 40C200 62.0914 217.909 80 240 80ZM240 65C253.807 65 265 53.8071 265 40C265 26.1929 253.807 15 240 15C226.193 15 215 26.1929 215 40C215 53.8071 226.193 65 240 65Z" fill-rule="evenodd"></path></svg>
+				<div class="card-act">
+					<div class="row">
+						<div class="col headname h-20 text-center mt-2 mt-lg-3 mt-sm-3  section-headname">Подарочный <span style="color: var(--main-color); font-weight: bold;">сертификат</span></div>
+					</div>
+					<div class="row">
+						<div class="col description h-40 text-center mt-3 mt-lg-3 mt-sm-4 mx-4">Настоящий сертификат дает право на одно бесплатное посещение апартаментов <br> <span class="montseratt" style="color: var(--main-color); font-weight: 1200;">( 1 сутки )</span></div>
+					</div>
+					<div class="row">
+						<div class="col w-100 h-40 text-center flex align-items-center justify-content-center">
+							<button type="button" class="callFormButtonOpen w-50 section-headname card-button my-4  my-md-5" data-toggle="modal" data-target="#callForm">7000 руб</button>
+						 </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+							<!-- Modal -->
+							<div class="modal fade" id="callForm" tabindex="-1" role="dialog" aria-labelledby="callFormLabel" aria-hidden="true">
+								<div class="modal-dialog" role="document">
+								  <div class="modal-content">
+										 <div class="modal-header">
+											<h5 class="modal-title mx-4 headname mt-4" id="callFormLabel" style=" text-transform: uppercase;">Подарочный <span class="ml-2" style="color: var(--main-color); font-weight: bold;">сертификат</span></h5>
+											<button type="button" class="close btn btn-secondary callFormButtonClose" data-dismiss="modal" aria-label="Close">
+											  <span class="" aria-hidden="true">&times;</span>
+											</button>
+										 </div>
+							
+										 <div class="modal-body">
+							
+							
+							
+											<form class="col-12 g-5 modal-form" action="" method="POST">
+										  {% csrf_token %}
+											 <div class="col-12">
+												 {{ form.name.errors }}
+													<label for="{{ form.name.id_for_label }}" class="form-label">Имя</label>
+												 {{ form.name }}
+											 </div>
+											 <div class="col-12">
+												 {{ form.number.errors }}
+													<label for="{{ form.number.id_for_label }}" class="form-label">Номер телефона</label>
+												 {{ form.number }}
+											 </div>
+											 <div class="col-12">
+													<div class="form-check my-3">
+														{{ form.checkbox.errors }}
+														{{ form.checkbox }}
+														{{ form.is_bot }}
+													  <label class="form-check-label" for="{{ form.checkbox.id_for_label }}">
+														 Мы не сохраняем ваши личные данные
+													  </label>
+														{{ form.non_field_errors }}
+													</div>
+											 </div>
+							
+							
+							
+							
+										 </div>
+							
+										 <div class="modal-footer">
+											<button type="button" class="callFormButtonClose btn btn-secondary section-headname" data-dismiss="modal">Закрыть</button>
+											<button type="submit" class="btn btn-secondary section-headname">Позвоните мне!</button>
+											 </div>
+									 </form>
+								  </div>
+								</div>
+							</div>
+							<!-- Modal end -->
+

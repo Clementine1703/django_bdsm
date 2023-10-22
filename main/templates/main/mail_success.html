@@ -1,0 +1,38 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="{% static 'main/bootstrap.css' %}" rel="stylesheet">
+	 <link rel="stylesheet" href="{% static 'main/header.css' %}">
+	 <link rel="stylesheet" href="{% static 'main/mail_success.css' %}">
+	 <link href="https://fonts.googleapis.com/css?family=Montserrat:100" rel="stylesheet">
+	 <link rel="icon" href="{% static 'main/images/main_image.png' %}">
+
+    <title>Главная</title>
+  </head>
+  <body>
+	
+	{% include "main/header.html" %}
+	{% if success %}
+    <div class="w-100 text-center">
+        <svg class="svgicon css17 my-5" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" style="border-radius: 50%; width: 100px; height: 100px;"><rect x="0" y="0" width="60" height="60" style="stroke: var(--main-color); fill: none; stroke-width: 2.4" rx="30" ry="30"></rect><g transform="scale(0.46) translate(35.21739130434782, 35.21739130434782)"><path d="M59.473,7.087c-0.703-0.704-1.843-0.704-2.547,0L14.92,49.093L3.075,37.247 c-0.703-0.703-1.844-0.704-2.547,0c-0.704,0.703-0.704,1.844,0,2.547l13.119,13.119c0.352,0.352,0.812,0.527,1.274,0.527 c0.46,0,0.922-0.176,1.273-0.527L59.473,9.634C60.176,8.931,60.176,7.791,59.473,7.087z"></path></g></svg>
+    </div>
+	<h1 class="w-100 text-center"><b>Заявка отправлена!</b><br></h1>
+	{% else %}
+	<h1 class="w-100 text-center">Что-то пошло не так...</h1>
+	{% endif %}
+    <p class="w-100 text-center">Вернуться на <a href="{% url 'index' %}">главную</a></p>
+
+	 <script
+	 src="https://code.jquery.com/jquery-3.6.0.min.js"
+	 integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+	 crossorigin="anonymous"></script>
+	 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+		<script src="{% static 'main/burger.js' %}"></script>
+  </body>
+</html>

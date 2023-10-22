@@ -1,0 +1,202 @@
+@font-face {
+  font-family: 'badscript'; /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+   src: url('serif/BadScript-Regular.ttf'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+
+@font-face {
+  font-family: 'lionel'; /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+   src: url('lionel/Lionelofparis.ttf'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+
+:root{
+	--main-bg-color-2: var(--main-color);
+
+}
+
+body{
+    background-color: #323940;
+	 font-family: 'Montserrat', sans-serif;
+}
+
+.index-top-section{
+	background-color: #323940;
+}
+
+
+
+.index-top-section .main-text h1{
+    display: inline;
+    color: white;
+	 font-size: 55px;
+    line-height: 1.6;
+    letter-spacing: 0em;
+    background-color: #212529;
+    box-shadow: -25px 0 0 #212529, 25px 0 0 #212529;
+    padding: 15px 0;
+	 letter-spacing: 0.1em;
+}
+
+@media (max-width: 1200px) {
+	
+	.index-top-section .main-text h1{
+		font-size: 50px;
+		line-height: 1.45;
+		
+  }
+ }
+
+@media (max-width: 650px) {
+	
+	.index-top-section .main-text h1{
+		font-size: 45px;
+		line-height: 1.4;
+		text-align: center;
+		
+		
+  }
+ }
+
+ @media (max-width: 500px) {
+	
+	.index-top-section .main-text h1{
+		font-size: 35px;
+		padding: 7px 0;
+		line-height: 1.3;
+		
+		
+  }
+ }
+
+ @media (max-width: 380px) {
+	
+	.index-top-section .main-text h1{
+		font-size: 25px;
+		
+		
+  }
+ }
+
+
+
+
+.index-top-section .main-text p{
+    font-family: badscript;
+    color: white;
+}
+
+
+.main-form {
+    padding: 20px;
+    /* background-color: #323940; */
+    font-family: badscript;
+    color: white;
+}
+
+.main-form .form-control{
+    background-color: #212529;
+    color: white;
+    font-family: 'Arial';
+}
+
+.main-form .form-control:focus, .main-form .form-control:active{
+    background-color: #212529;
+    color: white;
+}
+
+.main-form button{
+    color: white;
+	 background-color: var(--main-color);
+    display: inline-block;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.rooms{
+    background-color: #323940;
+}
+
+.rooms .room{
+	/* height: 330px; */
+	/* background-color: black; */
+	border: 20px solid #323940;
+}
+
+.advantages-element{
+	padding: 50px 70px;
+}
+
+.advantages-element .text{}
+
+
+
+.hidden {
+    visible: hidden;
+}
+
+
+.main-form button:after {
+	content: "";
+	display: block;
+	width: 20px;
+	height: 200px;
+	margin-left: 50px;
+	background: #fff;
+	background: linear-gradient(
+		 to bottom,
+		 rgba(255, 255, 255, 0.5) 0%,
+		 rgba(255, 255, 255, 1) 50%,
+		 rgba(255, 255, 255, 0.5) 100%
+	);
+	left: -40px;
+	top: -100px;
+	z-index: 1;
+	transform: rotate(45deg);
+	position: absolute;
+	animation: movingFlare 2s ease-in-out 0.05s infinite;
+ }
+
+ @keyframes movingFlare {
+	0% {
+	  left: -30px;
+	  margin-left: 0px;
+	}
+	30% {
+	  left: 110%;
+	  margin-left: 80px;
+	}
+	100% {
+	  left: 110%;
+	  margin-left: 80px;
+	}
+ }
+
+
+ .index-top-section{
+	background-image: url('main_fon.jpeg'); 
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  padding: 300px auto;
+}
+
+
+

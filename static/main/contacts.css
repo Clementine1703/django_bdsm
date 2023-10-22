@@ -1,0 +1,22 @@
+body {
+	background-color: #323940;
+}
+
+
+
+.contact-headname{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 650;
+	font-size: calc(30px + (40 - 30) * ((100vw - 260px) / (1920 - 260)));;
+	border-bottom: 5px solid var(--main-color);
+}
+
+.contact-content{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 650;
+	font-size: calc(20px + (30 - 20) * ((100vw - 260px) / (1920 - 260)));;
+	padding: 7px 15px;
+	border-radius: 18px;
+	background-color: #212529;
+	word-wrap: break-word;
+}
